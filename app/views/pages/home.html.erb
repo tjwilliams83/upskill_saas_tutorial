@@ -8,17 +8,17 @@
         <div class="col-md-6">
             <div class="well text-center home-signup-links">
                 <h2 class="text-center">Basic Membership</h2>
-                <h4>Sign up for free and get basic access to the community.</h4>
+                <h4>Sign up for free and get access to the community and contact information.</h4>
                 <br>
-                <%= link_to "Sign Up With Basic", "#" , class:"btn btn-primary btn-lg" %>
+                <%= link_to "Sign Up With Basic", new_user_registration_path(plan: @basic_plan.id) , class:"btn btn-primary btn-lg" %>
             </div>
         </div>
         <div class="col-md-6">
             <div class="well text-center home-signup-links">
-                <h2>Pro Membership</h2>
-                <h4>Sign up for the pro account for $10/month and get access to the community and contact information.</h4>
+                <h2>Creator's Account</h2>
+                <h4>Sign up for the creator's account for $10/month and get listed in our community</h4>
                 <br>
-                <%= link_to "Sign Up With Pro", "#" , class:"btn btn-success btn-lg" %>
+                <%= link_to "Sign Up With Pro", new_user_registration_path(plan: @pro_plan.id) , class:"btn btn-success btn-lg" %>
             </div>
         </div>
     </div>
