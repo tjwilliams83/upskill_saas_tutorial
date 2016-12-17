@@ -97,7 +97,7 @@
     </div>
 </div>
 
-<!--
+
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -117,8 +117,9 @@
             </div>
         </div>
     </div>
+    <%= link_to "Create your profile!", new_user_profile_path(user_id: current_user.id) if user_signed_in? %>
 </div>
--->
+
 
 <div class="gray container-fluid">
     <div class="client-logos text-center container">
