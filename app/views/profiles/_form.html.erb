@@ -9,7 +9,7 @@
   </div>
   <div class="form-group">
     <%= f.label :job_title %>
-    <%= f.select :job_title, ['Editor', 'Videographer', 'Motion Graphics Designer'], {}, class: 'form-control' %>
+    <%= f.select :job_title, ['Video Editor', 'Videographer', 'Motion Graphics Designer', 'VFX Artist', '3D Artist', 'Audio'], {}, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :phone_number %>
@@ -24,6 +24,6 @@
     <%= f.text_area :description, class: 'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.submit "Update Profile", class: 'btn b-btn' %>
+    <%= f.submit "Update Profile", class: 'btn g-btn' %>
   </div>
 <% end %>

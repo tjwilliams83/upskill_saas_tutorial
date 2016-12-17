@@ -29,7 +29,7 @@
      font-family: 'Open Sans', sans-serif;
      font-weight: 300;
  }
- 
+
  
 
 .b-btn{
@@ -37,6 +37,16 @@
   color: white;
     &:hover{
       background-color: #69bcfc;
+      color: white;
+      opacity: 1;
+    }
+}
+
+.g-btn{
+  background-color: #0dd980;
+  color: white;
+    &:hover{
+      background-color:  #0bc172;
       color: white;
       opacity: 1;
     }
@@ -63,11 +73,12 @@
 
 .full-image-home{
     background-color: #000000;
-    background: url('https://images.unsplash.com/photo-1447710441604-5bdc41bc6517?dpr=2&auto=format&fit=crop&w=767&h=548&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1447710441604-5bdc41bc6517?w=1200&fit=crop&crop-top=1000') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-position: center; 
 }
 
 .home-callout {
@@ -146,9 +157,9 @@
 //client logo stuff
 
 .client-logos{
-    padding-top: 34px;
+    padding-top: 64px;
     color: #6a7484;
-    padding-bottom: 64px;
+    padding-bottom: 84px;
 }
 
 .client-logos-pad{
