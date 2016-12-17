@@ -20,17 +20,50 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
  
- h1, h2, h3 {
-     font-family: 'Open Sans', sans-serif
+ h1{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 700;
  }
+ 
+ h2, h3, h4, h5, h6, p {
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+ }
+ 
+ 
 
-.home-callout, .navbar{
-  background-color: #1e242d;
+.b-btn{
+  background-color: #74c1fc;
   color: white;
+    &:hover{
+      background-color: #69bcfc;
+      color: white;
+      opacity: 1;
+    }
 }
 
-.full-image{
-    background: url('https://images.unsplash.com/photo-1470955233021-2c79a52e5034?dpr=2&auto=format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
+.ol-btn{
+  border: solid white 2px;
+  color: white;
+    &:hover{
+      color: white;
+      opacity: .8;
+    }
+}
+
+.btn-icon{
+  padding-left: 8px;
+}
+
+.home-callout, .navbar, .about-callout,{
+  background-color: #1e242d;
+  color: white;
+  font-weight: 300;
+}
+
+.full-image-home{
+    background-color: #000000;
+    background: url('https://images.unsplash.com/photo-1447710441604-5bdc41bc6517?dpr=2&auto=format&fit=crop&w=767&h=548&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -43,6 +76,24 @@
   padding-bottom: 200px;
 }
 
+.home-profile-img{
+  padding: 40px;
+}
+
+.home-profile-line{
+  background-color:#1e242d;
+  height: 2px;
+  width: 100%;
+  opacity: .5;
+}
+
+.home-strap{
+  background-color:#74c1fc;
+  padding-top: 26px;
+  padding-bottom: 40px;
+  color: white;
+}
+
 .navbar{
     border: none;
 }
@@ -51,8 +102,8 @@
 .navbar-default .navbar-nav li a {
     color: white;
     &:hover{
-        color: white;
-        opacity: .75;
+        color: #74c1fc;
+        opacity: 1;
     }
 }
 
@@ -72,21 +123,40 @@
   }
 }
 
+//nav line
+.nav-line{
+  background-color: #74c1fc;
+  height: 2px; 
+}
+
+//footer
+.foot{
+  margin-bottom: -20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 0;
+  outline: 0px;
+  border: 0px;
+}
+
+
+
+
 //client logo stuff
 
 .client-logos{
-    padding-top: 20px;
-    background-color: #ededed;
+    padding-top: 34px;
     color: #6a7484;
-    padding-bottom: 40px;
+    padding-bottom: 64px;
 }
 
 .client-logos-pad{
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .gray{
-   background-color: #ededed;
+   background-color: #f7f7f7;
+   width: 100%;
 }
 
 // Log in log out notice
@@ -103,12 +173,30 @@
 }
 
 .home-signup-links{
-  margin-top:30px;
+  margin-top: 30px;
   margin-bottom:30px;
   color:#6a7484;
-  padding:30px
-  
+  padding:30px;
+}
+
+.home-profile{
+  margin: -14px;
+  color: #1e242d;
+  padding: 40px;
 }
 
 
+//Features Page stuff
+.full-image-about{
+    background: url('https://images.unsplash.com/photo-1463082322900-a8012a93b525?dpr=2&auto=format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
+.about-callout {
+  margin-top: -20px;
+  padding-top: 100px;
+  padding-bottom: 125px;
+}
